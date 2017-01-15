@@ -8,7 +8,10 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 /**
  * Created by RAHUL YADAV on 13-01-2017.
@@ -17,6 +20,11 @@ import java.util.ArrayList;
 public class NewsAdapter extends ArrayAdapter<News> {
     public NewsAdapter(Context context, ArrayList<News> news) {
         super(context,0,news);
+    }
+
+    private Date formatDate(String date) throws ParseException {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
+         return dateFormat.parse(date);
     }
 
     @NonNull
@@ -39,7 +47,10 @@ public class NewsAdapter extends ArrayAdapter<News> {
         //get textView for submission date//
         TextView webPubDateTextView = (TextView)listItemView.findViewById(R.id.webPublicationDate);
         //set WebPubDateTextview//
-        webPubDateTextView.setText(currentNews.getmWebPublicationDate());
+
+          webPubDateTextView.setText(currentNews.getmWebPublicationDate());
+
+
 
         return listItemView;
 
