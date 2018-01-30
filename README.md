@@ -7,11 +7,11 @@ NewsFeedApp was just my attempt to understand the basics of Networking in Androi
 
 While developing this app i learnt things like
 
-1.How to generate API key.
-2.How to read a Java Script Object Notation Script(JSON) using the JSON formatter.
-3.How to parse and extract data from JSON in Android.
-4.How to display the parsed data in a List View using Loaders or Asynctask.
-5.How to fire an Intent to a Browsers to display the selected news in the list.
+1. How to generate API key.
+2. How to read a Java Script Object Notation Script(JSON) using the JSON formatter.
+3. How to parse and extract data from JSON in Android.
+4. How to display the parsed data in a List View using Loaders or Asynctask.
+5. How to fire an Intent to a Browsers to display the selected news in the list.
 
 First i generated an API key from theGuardian Website link given below 
 http://open-platform.theguardian.com/access/
